@@ -45,6 +45,56 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'ARDemoPage',
           path: '/aRDemoPage',
           builder: (context, params) => const ARDemoPageWidget(),
+        ),
+        FFRoute(
+          name: 'Signin',
+          path: '/signin',
+          builder: (context, params) => const SigninWidget(),
+        ),
+        FFRoute(
+          name: 'SigninPassword',
+          path: '/signinPassword',
+          builder: (context, params) => const SigninPasswordWidget(),
+        ),
+        FFRoute(
+          name: 'Signup',
+          path: '/signup',
+          builder: (context, params) => const SignupWidget(),
+        ),
+        FFRoute(
+          name: 'ForgotPassword',
+          path: '/forgotPassword',
+          builder: (context, params) => const ForgotPasswordWidget(),
+        ),
+        FFRoute(
+          name: 'PasswordReset',
+          path: '/passwordReset',
+          builder: (context, params) => const PasswordResetWidget(),
+        ),
+        FFRoute(
+          name: 'testPage',
+          path: '/testPage',
+          builder: (context, params) => const TestPageWidget(),
+        ),
+        FFRoute(
+          name: 'Home',
+          path: '/home',
+          builder: (context, params) => const HomeWidget(),
+        ),
+        FFRoute(
+          name: 'Categories',
+          path: '/categories',
+          builder: (context, params) => const CategoriesWidget(),
+        ),
+        FFRoute(
+          name: 'Products',
+          path: '/products',
+          builder: (context, params) => const ProductsWidget(),
+        ),
+        FFRoute(
+          name: 'Search',
+          path: '/search',
+          builder: (context, params) => const SearchWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

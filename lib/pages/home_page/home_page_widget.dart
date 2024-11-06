@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
@@ -67,11 +66,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
-                  child: CachedNetworkImage(
-                    fadeInDuration: const Duration(milliseconds: 500),
-                    fadeOutDuration: const Duration(milliseconds: 500),
-                    imageUrl:
-                        'https://www.freepnglogos.com/uploads/furniture-png/furniture-png-transparent-furniture-images-pluspng-15.png',
+                  child: Image.asset(
+                    'assets/images/furniture-ar-demo.png',
                     width: 200.0,
                     height: 200.0,
                     fit: BoxFit.fill,
